@@ -15,9 +15,9 @@ See <http://stackoverflow.com/questions/1958636/what-is-double-brace-initializat
 
 Can we avoid these troubles? Yes!
 
-Make separate "Builder" class especially for double brace initialization.
-Declare fields with default values.
-Put object creation method in that class.
+1. Make separate "Builder" class especially for double brace initialization.
+2. Declare fields with default values.
+3. Put object creation method in that class.
 
 ##Advantages:
 1. Simply to use.
