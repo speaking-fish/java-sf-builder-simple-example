@@ -1,19 +1,13 @@
 package com.speakingfish.builder.simple.test;
 
-public class MyClass {
+public class NewMyClass {
 
     public static class Builder {
         public int    first  = -1        ;
         public double second = Double.NaN;
         public String third  = null      ;
         
-        public MyClass create() {
-            return new MyClass(
-                first ,
-                second,
-                third
-                );
-        }
+        public NewMyClass create() { return new NewMyClass(this); }
         
     }
     
@@ -21,15 +15,11 @@ public class MyClass {
     protected final double second;
     protected final String third ;
     
-    protected MyClass(
-        int    first ,
-        double second,
-        String third
-    ) {
+    protected NewMyClass(Builder builder) {
         super();
-        this.first = first ;
-        this.second= second;
-        this.third = third ;
+        this.first = builder.first ;
+        this.second= builder.second;
+        this.third = builder.third ;
     }
 
     public int    first () { return first ; }
@@ -41,7 +31,7 @@ public class MyClass {
     }
 
     public static void main(String[] args) {
-        MyClass my = new MyClass.Builder(){{ first = 1; third = "3"; }}.create();
+        NewMyClass my = new NewMyClass.Builder(){{ first = 1; third = "3"; }}.create();
         System.out.println(my);
         /*
         for(int i = 0; i < 3; ++i) {
