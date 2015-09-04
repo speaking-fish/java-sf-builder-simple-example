@@ -33,16 +33,6 @@ public class NewMyClass {
     public static void main(String[] args) {
         NewMyClass my = new NewMyClass.Builder(){{ first = 1; third = "3"; }}.create();
         System.out.println(my);
-        /*
-        for(int i = 0; i < 3; ++i) {
-            final int j = i;
-            new MyClass.Builder(){{ first = j; third = "3"; }}.create();
-        }
-        
-        for(final int i : new int[] {1,2,3}) {
-            new MyClass.Builder(){{ first = i; third = "3"; }}.create();
-        }
-        */
     }
 
 }
