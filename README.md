@@ -35,3 +35,5 @@ And, as a result, we have simplest java builder pattern ever.
 
 ##Related:
 For most complicated java builder pattern see <https://github.com/speaking-fish/java-sf-builder-mega>
+Article: <http://habrahabr.ru/post/261163/>
+
