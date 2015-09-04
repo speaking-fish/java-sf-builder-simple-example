@@ -41,6 +41,7 @@ Inheritance: [MyBaseClass.java](https://github.com/speaking-fish/java-sf-builder
 Updated samples: replace passing of all parameters to pass only builder in class constructor.
 
 New simple class: [NewMyClass.java](https://github.com/speaking-fish/java-sf-builder-simple-example/blob/master/src/com/speakingfish/builder/simple/test/NewMyClass.java)
+
 New inheritance: [NewBaseClass.java](https://github.com/speaking-fish/java-sf-builder-simple-example/blob/master/src/com/speakingfish/builder/simple/test/NewBaseClass.java), [NewChildClass.java](https://github.com/speaking-fish/java-sf-builder-simple-example/blob/master/src/com/speakingfish/builder/simple/test/NewChildClass.java)
 
 ##Related:
