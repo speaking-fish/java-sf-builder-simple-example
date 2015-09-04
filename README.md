@@ -30,7 +30,7 @@ None
 
 And, as a result, we have simplest java builder pattern ever.
 
-##Usage:
+##Samples:
 <https://github.com/speaking-fish/java-sf-builder-simple-example/tree/master/src/com/speakingfish/builder/simple/test>
 
 ##Related:
