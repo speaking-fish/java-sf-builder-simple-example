@@ -3,7 +3,8 @@ Repository: java-sf-builder-simple-example
 #"Simplest java builder pattern" or "Resurrection of double braces initialization"
 
 What is double brace initialization?
-See <http://stackoverflow.com/questions/1958636/what-is-double-brace-initialization-in-java> <http://c2.com/cgi/wiki?DoubleBraceInitialization>.
+ 
+See [what-is-double-brace-initialization-in-java](http://stackoverflow.com/questions/1958636/what-is-double-brace-initialization-in-java) and [DoubleBraceInitialization](http://c2.com/cgi/wiki?DoubleBraceInitialization).
 
 ###Advantages:
 1. Very simply to use.
@@ -31,9 +32,14 @@ None
 And, as a result, we have simplest java builder pattern ever.
 
 ##Samples:
-<https://github.com/speaking-fish/java-sf-builder-simple-example/tree/master/src/com/speakingfish/builder/simple/test>
+All: [java-sf-builder-simple-example](https://github.com/speaking-fish/java-sf-builder-simple-example/tree/master/src/com/speakingfish/builder/simple/test)
+
+Simple class: [MyClass.java](https://github.com/speaking-fish/java-sf-builder-simple-example/blob/master/src/com/speakingfish/builder/simple/test/MyClass.java)
+
+Inheritance: [MyBaseClass.java](https://github.com/speaking-fish/java-sf-builder-simple-example/blob/master/src/com/speakingfish/builder/simple/test/MyBaseClass.java), [MyChildClass.java](https://github.com/speaking-fish/java-sf-builder-simple-example/blob/master/src/com/speakingfish/builder/simple/test/MyChildClass.java)
 
 ##Related:
-For most complicated java builder pattern see <https://github.com/speaking-fish/java-sf-builder-mega>
+For most complicated java builder pattern see [java-sf-builder-mega](https://github.com/speaking-fish/java-sf-builder-mega)
+
 Article: <http://habrahabr.ru/post/261163/>
 
