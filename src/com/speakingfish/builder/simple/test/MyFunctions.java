@@ -19,8 +19,38 @@ public class MyFunctions {
         public double second = Double.NaN;
         public String third  = null      ;
         
-        public String invoke() {  return "" + first + ", " + second + ", " + third; }
+        public String invoke() { return "" + first + ", " + second + ", " + third; }
     }
+
+    
+    /**
+     * Abstract micro-builder inheritance sample
+     */
+    
+    public abstract static class fn_base_impl {
+        public int    first  = -1        ;
+        public double second = Double.NaN;
+        public String third  = null      ;
+        
+        protected String invoke_fn() { return "" + first + ", " + second + ", " + third; }
+    }
+    
+    public static class fn_base extends fn_base_impl {
+        
+        public String invoke() { return invoke_fn(); }
+    }
+    
+    public static class fn_child_impl extends fn_base_impl {
+        public Object fourth;
+        protected StringBuilder invoke_fn_child() { return new StringBuilder(invoke_fn()).append(fourth); }
+    }
+    
+    public static class fn_child extends fn_child_impl {
+        public Object fourth;
+        
+        public StringBuilder invoke() { return invoke_fn_child(); }
+    }
+
 
     /**
      * Parameterized micro-builder sample
@@ -85,6 +115,12 @@ public class MyFunctions {
         String fn = new fn(){{ first = 1; third = "3"; }}.invoke();
         System.out.println(fn);
 
+        String fn_base = new fn_base(){{ first = 1; third = "3"; }}.invoke();
+        System.out.println(fn_base);
+        
+        StringBuilder fn_child = new fn_child(){{ first = 1; third = "3"; fourth = 4; }}.invoke();
+        System.out.println(fn_child);
+        
         String param = new param<List<String>>(){{ first = 1; third = asList("3", "4", "5"); }}.invoke();
         System.out.println(param);
         
