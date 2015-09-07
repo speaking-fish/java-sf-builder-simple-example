@@ -12,9 +12,9 @@ public class BaseClass {
 
     protected BaseClass(BuilderImpl builder) {
         super();
-        this.first= builder.first;
-        this.second= builder.second;
-        this.third= builder.third;
+        this.first = builder.first;
+        this.second = builder.second;
+        this.third = builder.third;
     }
 
     public int first() { return first; }
