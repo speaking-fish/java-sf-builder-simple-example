@@ -42,7 +42,7 @@ public class ChildClass extends BaseClass {
 
     public Object fourth() { return fourth; }
 
-    @Override public String toString() { return super.toString() + ", fourth=" + fourth; }
+    @Override public String toString() { return super.toString() + ", fourth: " + fourth; }
 
     public static void main(String[] args) {
         System.out.println(new BaseClass.Builder(){{ first = 1; third = "3"; }}.create());
