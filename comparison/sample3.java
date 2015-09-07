@@ -6,13 +6,10 @@ public class BaseClass {
         public BaseClass create() { return new BaseClass(this); }
     }
 
-// skip fields and getters
-
-    protected BaseClass(BuilderImpl builder) {
-        super();
-        this.first = builder.first;
-        this.second = builder.second;
-        this.third = builder.third;
+    protected BaseClass(BuilderImpl src) {
+        first = src.first;
+        second = src.second;
+        third = src.third;
     }
 
 }
@@ -25,11 +22,9 @@ public class ChildClass extends BaseClass {
         public ChildClass create() { return new ChildClass(this); }
     }
 
-// skip fields and getters
-
-    protected ChildClass(BuilderImpl builder) {
-        super(builder);
-        this.fourth = builder.fourth;
+    protected ChildClass(BuilderImpl src) {
+        super(src);
+        fourth = src.fourth;
     }
 
     public Object fourth() { return fourth; }

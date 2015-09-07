@@ -10,11 +10,10 @@ public class BaseClass {
     protected double second;
     protected String third;
 
-    protected BaseClass(BuilderImpl builder) {
-        super();
-        this.first = builder.first;
-        this.second = builder.second;
-        this.third = builder.third;
+    protected BaseClass(BuilderImpl src) {
+        first = src.first;
+        second = src.second;
+        third = src.third;
     }
 
     public int first() { return first; }
@@ -35,9 +34,9 @@ public class ChildClass extends BaseClass {
 
     protected Object fourth;
 
-    protected ChildClass(BuilderImpl builder) {
-        super(builder);
-        this.fourth = builder.fourth;
+    protected ChildClass(BuilderImpl src) {
+        super(src);
+        fourth = src.fourth;
     }
 
     public Object fourth() { return fourth; }
