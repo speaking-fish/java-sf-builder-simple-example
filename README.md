@@ -1,15 +1,15 @@
 Repository: java-sf-builder-simple-example
 
-#"Simplest java builder pattern" or "Resurrection of double braces initialization"
+# "Simplest java builder pattern" or "Resurrection of double braces initialization"
 
 What is double brace initialization?
  
 See [what-is-double-brace-initialization-in-java](http://stackoverflow.com/questions/1958636/what-is-double-brace-initialization-in-java) and [DoubleBraceInitialization](http://c2.com/cgi/wiki?DoubleBraceInitialization).
 
-###Advantages:
+### Advantages:
 1. Very simply to use.
 
-###Disadvantages:
+### Disadvantages:
 1. Breaks "equals" compatibility.
 2. No checks performed, when use direct assignments. 
 3. Possible memory leaks.
@@ -20,18 +20,18 @@ Can we avoid these troubles? Yes!
 2. Declare fields with default values.
 3. Put object creation method in that class.
 
-###Advantages:
+### Advantages:
 1. Simply to use.
 2. Do not breaks "equals" compatibility.
 3. You can perform checks in creation method. 
 4. No memory leaks.
 
-###Disadvantages:
+### Disadvantages:
 None
 
 And, as a result, we have simplest java builder pattern ever.
 
-##Samples:
+## Samples:
 All: [java-sf-builder-simple-example](https://github.com/speaking-fish/java-sf-builder-simple-example/tree/master/src/com/speakingfish/builder/simple/test)
 
 Simple class: [MyClass.java](https://github.com/speaking-fish/java-sf-builder-simple-example/blob/master/src/com/speakingfish/builder/simple/test/MyClass.java)
@@ -44,7 +44,7 @@ New simple class: [NewMyClass.java](https://github.com/speaking-fish/java-sf-bui
 
 New inheritance: [NewBaseClass.java](https://github.com/speaking-fish/java-sf-builder-simple-example/blob/master/src/com/speakingfish/builder/simple/test/NewBaseClass.java), [NewChildClass.java](https://github.com/speaking-fish/java-sf-builder-simple-example/blob/master/src/com/speakingfish/builder/simple/test/NewChildClass.java)
 
-##Related:
+## Related:
 For most complicated java builder pattern see [java-sf-builder-mega](https://github.com/speaking-fish/java-sf-builder-mega)
 
 Article: <http://habrahabr.ru/post/261163/>
